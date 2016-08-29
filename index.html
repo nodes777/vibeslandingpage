@@ -6,10 +6,10 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Spread The Vibe">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
-	<meta property="og:site_name" content="">
+	<meta property="og:site_name" content="Spread The Vibe">
 	<meta property="og:description" content="">
 
   <!-- Styles -->
@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <script src="js/modernizr-2.7.1.js"></script>
 
@@ -36,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+          <a  href="index.html"><img src="img/logoSm.png" alt="Logo"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -49,7 +50,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6">
-            <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+            <a href="index.html"><img src="img/bannerLogo.png" alt="Logo"></a>
           </div>
         </div>
 
@@ -79,7 +80,7 @@
             <i class="fa fa-envelope-o margin-40"></i>
             <h2 class="black">Talk to Us</h2>
             <br />
-            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+            <p class="black">We'd love to hear from you, please send us a message below</p>
             <br />
 
             <div class="row">
@@ -87,9 +88,12 @@
                 <form role="form" method="post" action="index.php">
                   <div class="form-group">
                     <input name="name" class="form-control" placeholder="Your Name Here">
+                    &nbsp
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-                    <textarea name="message" class="form-control" placeholder="Your Message Here"></textarea>
-                    <label>What is 2+2? (Anti-spam)</label><input name="human" placeholder="Type Here">
+                    &nbsp
+                    <textarea name="message" class="form-control input-message" placeholder="Your Message Here"></textarea>
+                    &nbsp
+                    <label>What is 2+2? (Anti-spam)</label><input name="human" class="spam-control" placeholder="">
                   </div>
 
                   <button type="submit"  name="submit" class="btn btn-primary btn-lg">I'm Feeling the Vibe</button>
