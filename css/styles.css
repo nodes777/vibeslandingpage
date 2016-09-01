@@ -2,6 +2,13 @@
  * Taylor's Additions
  */
 
+ h1{
+	color:#EEEBE1;
+ }
+ p.lead{
+ 	color:#EEEBE1;
+ }
+
 textarea.input-message{
 	background-color: #FFFFFF;
     background-image: none;

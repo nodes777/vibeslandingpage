@@ -1,21 +1,32 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: Landing Page Demo';
-    $to = 'jeff@spreadthevibes.org';
-    $subject = 'From the Landing Page';
-    $human = $_POST['human'];
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "taylor@spreadthevibe.org";
+  $email = $_REQUEST['email'];
+  $name = $_REQUEST['name'];
+  $message = $_REQUEST['message'];
+  
+  //send email
+  mail($admin_email, "$email", $name, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-    if ($_POST['submit'] && $human == '4') {
-        if (mail ($to, $subject, $body, $from)) {
-	    echo '<p>Your message has been sent!</p>';
-	} else {
-	    echo '<p>Something went wrong, go back and try again!</p>';
-	}
-    } else if ($_POST['submit'] && $human != '4') {
-	echo '<p>You answered the anti-spam question incorrectly!</p>';
-    }
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Subject: <input name="subject" type="text" /><br />
+  Message:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Submit" />
+  </form>
+  
+<?php
+  }
 ?>
