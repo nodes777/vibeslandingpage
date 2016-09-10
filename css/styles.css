@@ -45,3 +45,9 @@ textarea.input-message{
     margin: 0;
     text-align: center;
 }
+
+.profiles{
+    height: 140px;
+    width: 140px;
+    text-align: center;
+}
