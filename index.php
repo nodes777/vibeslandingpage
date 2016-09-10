@@ -1,32 +1,18 @@
 <?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
-  
-  //Email information
-  $admin_email = "taylor@spreadthevibe.org";
-  $email = $_REQUEST['email'];
-  $name = $_REQUEST['name'];
-  $message = $_REQUEST['message'];
-  
-  //send email
-  mail($admin_email, "$email", $name, "From:" . $email);
-  
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-  
-  //if "email" variable is not filled out, display the form
-  else  {
-?>
 
- <form method="post">
-  Email: <input name="email" type="text" /><br />
-  Subject: <input name="subject" type="text" /><br />
-  Message:<br />
-  <textarea name="comment" rows="15" cols="40"></textarea><br />
-  <input type="submit" value="Submit" />
-  </form>
-  
-<?php
-  }
+$to      = "taylor@spreadthevibe.org, jeff@spreadthevibe.org";
+$subject = 'From the Spread The Vibe Landing Page';
+$name = $_POST['name'];
+$email = $_POST['email'];
+
+$message = $_POST['message'];
+$message = <<<EMAIL
+From: $name
+Email: $email
+$message
+EMAIL;
+$headers = 'From: ' . $email;
+
+mail($to, $subject, $message, $headers);
+echo "Thank you for contacting us! We will be in touch shortly";
 ?>
