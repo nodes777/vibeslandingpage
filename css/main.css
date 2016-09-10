@@ -229,7 +229,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #E8AC0C;
+    background: #8fe2ec;
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -397,8 +397,8 @@ hr.line {
 }
 
 .red {
-  border-color: red;
-  color: red;
+  border-color: #fb406a;
+  color: #fb406a;
 }
 .green {
   border-color: green;
