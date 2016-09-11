@@ -3,14 +3,24 @@
  */
 
  h1{
-	color:#EEEBE1;
+	color:#31B180;
  }
  h2{
     color: black;
  }
  p.lead{
- 	color:#EEEBE1;
+ 	color:#31B180;
  }
+.opener{
+    background-color: #FFFFFF;
+}
+
+.whatVibe{
+    background-color: #31B180;
+}
+p.whatVibe{
+    color:#FFFFFF;
+}
 
 textarea.input-message{
 	background-color: #FFFFFF;
