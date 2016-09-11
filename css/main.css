@@ -260,7 +260,8 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #4CFF42;
+    border-color: #8fe2ec;
+    text-align: center;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -397,8 +398,8 @@ hr.line {
 }
 
 .red {
-  border-color: #fb406a;
-  color: #fb406a;
+  border-color: #EC0B43;
+  color: #EC0B43;
 }
 .green {
   border-color: green;
