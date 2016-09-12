@@ -5,9 +5,7 @@
  h1{
 	color:#31B180;
  }
- h2{
-    color: black;
- }
+
  p.lead{
  	color:#31B180;
  }
@@ -18,9 +16,13 @@
 .whatVibe{
     background-color: #31B180;
 }
-p.whatVibe{
+.whatVibe p{
     color:#FFFFFF;
 }
+.theTeam h3,h2,p{
+    color: black;
+}
+
 
 textarea.input-message{
 	background-color: #FFFFFF;

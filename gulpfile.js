@@ -16,7 +16,7 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         },
     open: false,
-    files: [ '*.css', '*.html'],
+    files: [ '*.css', '*.html', 'css/*.css'],
     });
 });
 
