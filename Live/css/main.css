@@ -25,7 +25,7 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 40px;
-  etter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #ffffff;
   font-weight: 700;
 }
@@ -34,7 +34,7 @@ h3 {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0px;
-  color: #231f20;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -48,7 +48,6 @@ h3 {
 p {
   font-size: 17px;
   line-height: 22px;
-  color: #929496;
   font-weight: 400;
 }
 
@@ -229,12 +228,12 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #E8AC0C;
+    background: #FFFFFF;
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
     position: fixed;
-    top: -60px;
+    top: 0px;
     transition: top 0.4s ease 0s;
 }
 
@@ -243,13 +242,13 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
-    color: #ffffff;
+    color: #31B180;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #ffffff;
+    color: #BACDB0;
     opacity: 0.6;
 }
 
@@ -260,7 +259,8 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #4CFF42;
+    border-color: #FFFFFF;
+    text-align: center;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -270,7 +270,9 @@ a:hover, a:focus {
 .logo img {
 	margin-top: 6px;
 }
-
+.navbar-right{
+  text-align: right;
+}
 
 
 /* ==========================================================================
@@ -278,7 +280,7 @@ a:hover, a:focus {
    ========================================================================== */
 header {
   /*background: url(../img/header-bg.jpg) no-repeat center center;*/
-	background-color: #02001A;
+	background-color: #FFFFFF;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -392,6 +394,15 @@ hr.line {
 .yellow {
 	border-color: #fdc05d;
 	color: #fdc05d;
+}
+
+.red {
+  border-color: #EC0B43;
+  color: #EC0B43;
+}
+.green {
+  border-color: green;
+  color: green;
 }
 
 .iphone {

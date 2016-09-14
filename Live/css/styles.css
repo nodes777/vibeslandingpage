@@ -3,11 +3,26 @@
  */
 
  h1{
-	color:#EEEBE1;
+	color:#31B180;
  }
+
  p.lead{
- 	color:#EEEBE1;
+ 	color:#31B180;
  }
+.opener{
+    background-color: #FFFFFF;
+}
+
+.whatVibe{
+    background-color: #31B180;
+}
+.whatVibe p{
+    color:#FFFFFF;
+}
+.theTeam h3,h2,p{
+    color: black;
+}
+
 
 textarea.input-message{
 	background-color: #FFFFFF;
@@ -40,5 +55,11 @@ textarea.input-message{
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     vertical-align:;
     margin: 0;
+    text-align: center;
+}
+
+.profiles{
+    height: 140px;
+    width: 140px;
     text-align: center;
 }

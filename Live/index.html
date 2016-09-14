@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Spread the Vibes Landing Page</title>
+  <title>Spread the Vibe</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <meta property="og:title" content="Spread The Vibe">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
+	<meta property="og:url" content="spreadthevibe.org">
 	<meta property="og:site_name" content="Spread The Vibe">
-	<meta property="og:description" content="">
+	<meta property="og:description" content="Spread The Vibe is an experiential marketing firm committed to businesses that promote a healthy lifestyle, positive community, and sustainable environment">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,6 +24,18 @@
 
   <script src="js/modernizr-2.7.1.js"></script>
 
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83984012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 
 <body>
@@ -32,27 +44,26 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+        <a class="" href="index.html"><img style ="padding-bottom: 5px;" src="img/inverseLogoSm.png" alt="Spread The Vibe Logo"></a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a  href="index.html"><img src="img/logoSm.png" alt="Logo"></a>
+
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#whatVibe" class="scroll">What's The Vibe?</a></li>
+            <li><a href="#theTeam" class="scroll">The Team</a></li>
+            <li><a href="#invite" class="scroll">Get The Vibe</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6">
-            <a href="index.html"><img src="img/bannerLogo.png" alt="Logo"></a>
-          </div>
-        </div>
+      <div class="container opener">
 
         <div class="row header-info">
           <div class="col-sm-10 col-sm-offset-1 text-center">
@@ -72,6 +83,57 @@
       </div>
     </header>
 
+
+    <section id="whatVibe" class="pad-sm whatVibe">
+      <div class="container">
+        <div class="row">
+          <div class=" wow fadeIn " data-wow-delay="0.4s">
+            <h2 class="text-center white">What is The Vibe?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+            <hr class="line red">
+            <h3>Healthy Livestyles</h3>
+            <p>Seek out physically engaging recreation, maintain a nutritious and full diet, and prioritize general personal health for the body and mind.</p>
+          </div>
+          <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
+            <hr  class="line blue">
+            <h3>Positive Community</h3>
+            <p>Be part of an interactive society that listens, collaborates efficiently, and provides all with the opportunity to live a healthy life.</p>
+          </div>
+          <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
+            <hr  class="line green">
+            <h3>Sustainable Environment</h3>
+            <p>Actively choose to support processes and products that coexist with the preservation of our world’s resources, life, and aesthetic beauty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="theTeam" class="pad-sm theTeam">
+      <div class="container">
+        <div class="row">
+          <div class="wow fadeIn " data-wow-delay="0.4s">
+            <h2 class="text-center">The Team</h2>
+            <p>The core leadership of Spread The Vibe met while working at a summer camp in Northern California. Now they take their marketing experience and provide companies the opportunity to grow their difference, while giving youth the opportunity to do the same.</p>
+          </div>
+        </div>
+        <div class="row" style="color:black; text-align:center">
+          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+          <img src="img/jeff.jpg" alt="Jeff" class="img-rounded center-block profiles">
+            <h3>Jeff Arnaudo</h3>
+            <p>CEO</p>
+          </div>
+          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.8s">
+          <img src="img/taylorSquare.jpg" alt="Taylor" class="img-rounded center-block profiles">
+            <h3>Taylor Nodell</h3>
+            <p>CTO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="invite" class="pad-sm light-gray-bg">
       <div class="container">
         <div class="row">
@@ -86,17 +148,17 @@
               <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <form role="form" method="post" action="index.php">
                   <div class="form-group">
-                    <input name="name" class="form-control" placeholder="Your Name Here">
+                    <input type ="text" id = "name" name="name" class="form-control" placeholder="Your Name Here">
                     &nbsp
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
                     &nbsp
-                    <textarea name="message" class="form-control input-message" placeholder="Your Message Here"></textarea>
+                    <textarea type = "text" id ="message" name="message" class="form-control input-message" placeholder="Your Message Here"></textarea>
                     &nbsp
                     <!--<label>What is 2+2? (Anti-spam)</label>
                     <input name="human" class="spam-control" placeholder="">-->
                   </div>
 
-                  <button type="submit"  name="submit" class="btn btn-primary btn-lg">I'm Feeling the Vibe</button>
+                  <input type="submit"  name="submit" class="btn btn-primary btn-lg" value="I'm Feeling The Vibe"></input>
                 </form>
               </div>
             </div><!--End Form row-->
@@ -115,7 +177,7 @@
             <ul class="list-inline social">
               <li>Connect with us on</li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="http://facebook.com/spreadthevibemarketing"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
